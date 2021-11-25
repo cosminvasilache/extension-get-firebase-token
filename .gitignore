@@ -1,0 +1,6 @@
+env.js
+*.env.ts
+*.http
+
+node_modules
+dist

@@ -1,0 +1,31 @@
+{
+  "name": "Get Firebase Token",
+  "version": "1.0.0",
+  "description": "Get Firebase JWT token from IndexedDB",
+  "manifest_version": 2,
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "browser_action": {},
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://app.altaninsights.com/*",
+        "https://app.altaninsights.com/*",
+        "http://staging-app.altaninsights.com/*",
+        "https://staging-app.altaninsights.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+  ],
+  "incognito": "spanning"
+}
